@@ -1,0 +1,73 @@
+/*Pun Shusang*/
+.container-fluid
+{
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+}
+
+.body
+{
+  text-align: left;
+  font-family: sans-serif;
+  color: #1a0000;
+}
+
+a:link
+{
+  color: red;
+}
+
+a:visited
+{
+  color: blue;
+}
+
+#phone
+{
+  color: #ADD8E6;
+
+}
+
+#profileinfo
+{
+  background-color: grey;
+}
+.table
+{
+  margin: auto;
+}
+
+.form
+{
+  margin: auto;
+}
+
+.header
+{
+  color: black;
+}
+
+h1
+{
+  text-align: center;
+}
+
+.border
+{
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+
+}
+
+.intro
+{
+  text-align: left;
+
+}
+#formgroup
+{
+  display: table;
+
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <title>Book</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Book page</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="profile.html">Profile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="book.html">Book</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="container-fluid col-md 7">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Book Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Publish Date</th>
+      <th scope="col">Review Score</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row">1</th>
+      <td>The Great Gatsby</td>
+      <td>F. Scott Fitzgerald</td>
+      <td>April 10, 1925</td>
+      <td>3.9</td>
+      <td>$4.99</td>
+    </tr>
+
+    <tr>
+      <th scope="row">2</th>
+      <td>The Catcher in the Rye</td>
+      <td>J. D. Salinger</td>
+      <td>July 16, 1951</td>
+      <td>3.8</td>
+      <td>$9.99</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>To Kill a Mockingbird</td>
+      <td>Harper Lee</td>
+      <td>July 11, 1960</td>
+      <td>4.3</td>
+      <td>$19.99</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>The Good Earth</td>
+      <td>Pearl S. Buck</td>
+      <td>March 2, 1931</td>
+      <td>4</td>
+      <td>$29.49</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>The Grapes of Wrath</td>
+      <td>John Steinbeck</td>
+      <td>April 14, 1939</td>
+      <td>4</td>
+      <td>$22.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<div class="container-fluid col-md-5">
+  <form class="table border">
+    <div class="form-group col-md-11">
+      <h3>Book Application</h3>
+      <label for="titleinformation">Author: </label>
+      <input type="text" class="form-control" id="Author" placeholder="Please insert author name">
+    </div>
+    <div class="form-group col-md-11">
+      <label for="titleinformation">Title: </label>
+      <input type="text" class="form-control" id="Title" placeholder="Please insert title">
+    </div>
+    <div class="form-group col-md-11">
+      <label for="titleinformation">Publish Date: </label>
+      <input type="text" class="form-control" id="Publish Date" placeholder="Please insert date">
+    </div>
+    <div class="form-group col-md-11">
+      <label for="titleinformation">Review Score: </label>
+      <input type="text" class="form-control" id="Score" placeholder="Please insert score">
+    </div>
+    <div class="form-group col-md-11">
+      <label for="titleinformation">Price: </label>
+      <input type="text" class="form-control" id="Price" placeholder="Please insert price">
+    </div>
+    <div class="form-group col-sm-11">
+      <button type="submit" class="btn btn-outline-dark">Add new book</button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
