@@ -28,7 +28,7 @@
   </nav>
 <h1 class="welcome">Welcome to Employee Profile Page</h1>
 <div class="container-fluid">
-<table class="table">
+<!--table class="table">
   <thead id="profileinfo">
     <tr>
       <th scope="col">Name</th>
@@ -38,18 +38,79 @@
       <th scope="col">Phone Number</th>
       <th scope="col">Profile Picture</th>
     </tr>
-  </thead>
+  </thead>-->
   <div id="randomizerMemberApp">
-  <tbody>
-          <!--div class="members membersRandom" v-for="member in members"-->>
+
+
+  <!-- <tbody>
+          div class="members membersRandom" v-for="member in members"
         <tr>
-          <td><div class="member membersRandom" v-for="member in members"> {{member.name.first}} {{member.name.last}}</div></td>
-          <td><div class="member membersRandom" v-for="member in members">{{member.nat}}</div></td>
-          <td><div class="member membersRandom" v-for="member in members">{{member.dob.date}}</div></td>
-          <td><div class="member membersRandom" v-for="member in members"><a href="'mailto:${member.email}'">{{member.email}}</a></div></td>
-          <td><div class="member membersRandom" v-for="member in members">{{member.phone}}</div></td>
-          <td><div class="member membersRandom" v-for="member in members"><a :href="member.medium"><img v-bind:src="member.thumbnail" alt="Random Person"</a></div></td>
-        </tr>
+          <td> -->
+              <h2>
+              Name:
+                <div class="member membersRandom" v-for="member in members">
+                  <span>
+                   {{member.first}} {{member.last}}
+                 </span>
+                </div>
+            </h2>
+          <!--/td>
+          <td-->
+              <h2>
+              National:
+              <div class="member membersRandom">
+                <span>
+              {{members.nat}}
+            </span>
+            </div>
+            </h2>
+
+        <!--/td>
+          <td-->
+            <h2>
+              Date:
+              <div class="member membersRandom" v-for="member in members">
+                  <span>
+              {{member.date}}
+            </span>
+            </div>
+            </h2>
+          <!--/td>
+          <td-->
+              <h2>
+              Email:
+              <div class="member membersRandom">
+                  <span>
+              <a :href= "`mailto:${members.email}`">
+                {{members.email}}
+              </a>
+            </span>
+            </div>
+            </h2>
+
+          <!--/td>
+          <td-->
+              <h2>
+                Phone number:
+                <div class="member membersRandom">
+                <span>
+                {{members.phone}}
+              </span>
+              </div>
+              </h2>
+
+          <!--/td>
+          <td-->
+          <h2>
+          <div class="member membersRandom">
+              <span>
+              <a :href="members.picture.large">
+                <img v-bind:src="members.picture.large" alt="Random Person">
+              </a>
+            </span>
+          </div>
+        </h2>
+      </div>
     <!--tr>
       <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
       <td class="membersInfo">Mexico</td>
@@ -61,11 +122,9 @@
       <td class="membersInfo">(539)-699-6860</td>
       <td><a href="img/Hazel.jpg"><img src="img/hazel.jpg" alt="Hazel"</a></td>
     </tr-->
-</div>
-  </tbody>
+<!--/div>
   </div>
-</table>
-</div>
+</table-->
 <cite>https://www.html.am/html-codes/links/html-image-link.cfm</cite>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
