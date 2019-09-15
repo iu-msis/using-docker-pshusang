@@ -1,13 +1,14 @@
-var randomzierApp = new Vue({
-  el#: '#randomzierMemberApp',
+var randomizerApp = new Vue({
+  el#: '#randomizerMemberApp',
   data: {
     members: []
   },
     methods: {
-      fetchMembers() {
-        fetch('json/randomuser.me-sample.json')
+      fetchMembers()
+      {
+        fetch('https://randomuser.me/api')
         .then(response => response.json())
-        .then(json => {randomzierApp.members = json})
+        .then(json => {randomizerApp.members = json})
       }
 },
   create(){

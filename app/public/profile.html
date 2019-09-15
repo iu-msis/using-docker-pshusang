@@ -39,17 +39,17 @@
       <th scope="col">Profile Picture</th>
     </tr>
   </thead>
-  <div id="randomzierMemberApp">
-    <div class="members membersRandom" v-for="member in members">
+  <div id="randomizerMemberApp">
   <tbody>
-    <tr>
-      <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
-      <td class="membersInfo">{{member.nat}}</td>
-      <td class="membersInfo">{{member.dob.date}}</td>
-      <td class="membersInfo"><a href="'mailto:${member.email}'">{{member.email}}</a></td>
-      <td class="membersInfo">{{member.phone}}</td>
-      <td><a href="img/Colleen.jpg"><img src=img/Colleen.jpg alt="Colleen"</a></td>
-    </tr>
+          <!--div class="members membersRandom" v-for="member in members"-->>
+        <tr>
+          <td><div class="member membersRandom" v-for="member in members"> {{member.name.first}} {{member.name.last}}</div></td>
+          <td><div class="member membersRandom" v-for="member in members">{{member.nat}}</div></td>
+          <td><div class="member membersRandom" v-for="member in members">{{member.dob.date}}</div></td>
+          <td><div class="member membersRandom" v-for="member in members"><a href="'mailto:${member.email}'">{{member.email}}</a></div></td>
+          <td><div class="member membersRandom" v-for="member in members">{{member.phone}}</div></td>
+          <td><div class="member membersRandom" v-for="member in members"><a :href="member.medium"><img v-bind:src="member.thumbnail" alt="Random Person"</a></div></td>
+        </tr>
     <!--tr>
       <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
       <td class="membersInfo">Mexico</td>
@@ -60,9 +60,9 @@
       <td><a href="mailto:hazel@gmail.com">hazel@gmail.com</a></td>
       <td class="membersInfo">(539)-699-6860</td>
       <td><a href="img/Hazel.jpg"><img src="img/hazel.jpg" alt="Hazel"</a></td>
-    </tr-->>
+    </tr-->
+</div>
   </tbody>
-    </div>
   </div>
 </table>
 </div>
