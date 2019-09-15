@@ -39,28 +39,39 @@
       <th scope="col">Profile Picture</th>
     </tr>
   </thead>
+  <div id="randomzierMemberApp">
+    <div class="members membersRandom" v-for="member in members">
   <tbody>
     <tr>
-      <td>Colleen</td>
-      <td>Jamaica</td>
-      <td>May 4, 2014</td>
-      <td><a href="mailto:colleen@gmail.com">colleen.clark20@gmail.com</a></td>
-      <p></p>
-      <td id="phone">(368)-898-1986</td>
+      <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
+      <td class="membersInfo">{{member.nat}}</td>
+      <td class="membersInfo">{{member.dob.date}}</td>
+      <td class="membersInfo"><a href="'mailto:${member.email}'">{{member.email}}</a></td>
+      <td class="membersInfo">{{member.phone}}</td>
       <td><a href="img/Colleen.jpg"><img src=img/Colleen.jpg alt="Colleen"</a></td>
     </tr>
-    <tr>
-      <td>Emily</td>
-      <td>Mexico</td>
-      <td>July 3, 1953</td>
+    <!--tr>
+      <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
+      <td class="membersInfo">Mexico</td>
+      <td class="membersInfo">{{member.dob.date}}</td>
       <td><a href="mailto:hazel@gmail.com">hazel@gmail.com</a></td>
-      <td id="phone">(539)-699-6860</td>
+      <td class="membersInfo">(539)-699-6860</td>
       <td><a href="img/Hazel.jpg"><img src="img/hazel.jpg" alt="Hazel"</a></td>
-    </tr>
+      <td><a href="mailto:hazel@gmail.com">hazel@gmail.com</a></td>
+      <td class="membersInfo">(539)-699-6860</td>
+      <td><a href="img/Hazel.jpg"><img src="img/hazel.jpg" alt="Hazel"</a></td>
+    </tr-->>
   </tbody>
+    </div>
+  </div>
 </table>
 </div>
 <cite>https://www.html.am/html-codes/links/html-image-link.cfm</cite>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/randomizer.app.js"></script>
+
+
 
 
 </body>
