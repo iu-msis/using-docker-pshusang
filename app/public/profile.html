@@ -44,16 +44,16 @@
           div class="members membersRandom" v-for="member in members"
         <tr>
           <td> -->
-          <div class="member membersRandom" v-for="member in members">
+          <div class="member membersRandom" v-for="member in members" v-if="member.large">
               <span>
               <a :href="member.large">
-                <img v-bind:src="member.thumbnail" alt=>
+                <img v-bind:src="member.large" alt="">
               </a>
             </span>
           </div>
               <h2>
               Name:
-                <div class="member membersRandom" v-for="member in members">
+                <div class="member membersRandom" v-for="member in (members)">
                   <span>
                    {{member.first}} {{member.last}}
                  </span>
