@@ -40,12 +40,17 @@
     </tr>
   </thead>-->
   <div id="randomizerMemberApp">
-
-
   <!-- <tbody>
           div class="members membersRandom" v-for="member in members"
         <tr>
           <td> -->
+          <div class="member membersRandom" v-for="member in members">
+              <span>
+              <a :href="member.large">
+                <img v-bind:src="member.thumbnail" alt=>
+              </a>
+            </span>
+          </div>
               <h2>
               Name:
                 <div class="member membersRandom" v-for="member in members">
@@ -102,13 +107,7 @@
           <!--/td>
           <td-->
           <h2>
-          <div class="member membersRandom">
-              <span>
-              <a :href="members.picture.large">
-                <img v-bind:src="members.picture.large" alt="Random Person">
-              </a>
-            </span>
-          </div>
+
         </h2>
       </div>
     <!--tr>
