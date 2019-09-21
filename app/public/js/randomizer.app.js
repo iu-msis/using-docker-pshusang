@@ -74,10 +74,13 @@ var randomizerApp = new Vue({
       handleSubmit(event)
       {
         this.fetchMembers();
-      },
-      created()
-      {
-        this.handleSubmit();
-        this.fetchMembers();
       }
-  }});
+
+  },
+
+  created()
+  {
+    this.fetchMembers();
+  }
+
+});

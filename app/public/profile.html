@@ -40,7 +40,6 @@
     </tr>
   </thead>-->
   <div id="randomizerMemberApp">
-  <form @submit.prevent="handleSubmit">
   <!-- <tbody>
           div class="members membersRandom" v-for="member in members"
         <tr>
@@ -126,10 +125,12 @@
 <cite>https://www.html.am/html-codes/links/html-image-link.cfm</cite><br>
 <div class="form-group row">
   <div class="col-sm-10">
+    <form @submit.prevent="handleSubmit">
+      <form>
     <button type="submit" class="btn btn-primary">Refresh</button>
+  </form>
   </div>
 </div>
-</form>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
