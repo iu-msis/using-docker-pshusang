@@ -40,6 +40,7 @@
     </tr>
   </thead>-->
   <div id="randomizerMemberApp">
+  <form @submit.prevent="handleSubmit">
   <!-- <tbody>
           div class="members membersRandom" v-for="member in members"
         <tr>
@@ -51,6 +52,7 @@
               </a>
             </span>
           </div>
+
               <h2>
               Name:
                 <div class="member membersRandom" v-for="member in (members)">
@@ -106,10 +108,7 @@
 
           <!--/td>
           <td-->
-          <h2>
 
-        </h2>
-      </div>
     <!--tr>
       <td class="membersInfo">{{member.name.first}} {{member.last.name}}</td>
       <td class="membersInfo">Mexico</td>
@@ -125,8 +124,13 @@
   </div>
 </table-->
 <cite>https://www.html.am/html-codes/links/html-image-link.cfm</cite><br>
-<button v-on:click="fetchMembers">Refresh</button>
-
+<div class="form-group row">
+  <div class="col-sm-10">
+    <button type="submit" class="btn btn-primary">Refresh</button>
+  </div>
+</div>
+</form>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/randomizer.app.js"></script>
