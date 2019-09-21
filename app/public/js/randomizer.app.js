@@ -71,13 +71,13 @@ var randomizerApp = new Vue({
         .then(function(json) {randomizerApp.members = json.results[0];
         console.log(randomizerApp.members);})
       },
-      handleSubmit()
+      handleSubmit(event)
       {
-        
+        this.fetchMembers();
       },
       created()
       {
-        this.handleSubmit()
-        this.fetchMembers()
+        this.handleSubmit();
+        this.fetchMembers();
       }
-      });
+  }});
